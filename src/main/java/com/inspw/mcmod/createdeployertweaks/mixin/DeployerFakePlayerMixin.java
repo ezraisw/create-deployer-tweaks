@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(DeployerFakePlayer.class)
 public class DeployerFakePlayerMixin {
     @Inject(method = "deployerKillsDoNotSpawnXP(ILnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/entity/LivingEntity;)I", at = @At("HEAD"), cancellable = true)
-    public static void dropXpAndMend(int i, PlayerEntity player, LivingEntity entity,
+    private static void dropXpAndMend(int i, PlayerEntity player, LivingEntity entity,
             CallbackInfoReturnable<Integer> cir) {
         if (player instanceof DeployerFakePlayer fakePlayer) {
             int xp = i;
