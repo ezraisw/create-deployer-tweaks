@@ -1,41 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "createdeployertweaks",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Create Deployer Tweaks",
+	"description": "Minor tweaks related to Create's deployers.",
 	"authors": [
-		"Me!"
+		"pwnedgod"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://inspw.com",
+		"sources": "https://github.com/ezraisw/create-deployer-tweaks"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/createdeployertweaks/icon.png",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-		]
-	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"createdeployertweaks.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
-		"java": ">=21",
+		"fabricloader": ">=0.14.21",
+		"minecraft": ">=1.20.1",
+		"create": "*",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

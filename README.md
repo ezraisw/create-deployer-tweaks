@@ -1,9 +1,6 @@
-# Fabric Example Mod
+# Create Deployer Tweaks
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+These tweaks are taken from [Create Enchantment Industry](https://github.com/DragonsPlusMinecraft/CreateEnchantmentIndustry-Fabric). For those that want the Deployer changes without the CEI's other stuff.
+- Allow Deployer to drop XP on mob kills.
+- Allow Deployer to use dropped XP if the currently used tool has Mending.
+- Allow swords on Deployer to take advantage of sweeping edge.

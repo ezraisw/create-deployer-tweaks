@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.inspw.mcmod.createdeployertweaks.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"DeployerFakePlayerMixin",
+		"PlayerEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
