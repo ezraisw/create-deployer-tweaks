@@ -16,8 +16,8 @@ public class PlayerEntityMixin {
     private boolean forceSweepingEdgeForDeployerFakePlayer(boolean value) {
         PlayerEntity self = (PlayerEntity) (Object) this;
         if (self instanceof DeployerFakePlayer fakePlayer) {
-            ItemStack itemstack = fakePlayer.getMainHandStack();
-            return itemstack.canPerformAction(ToolActions.SWORD_SWEEP);
+            ItemStack deployerToolStack = fakePlayer.getMainHandStack();
+            return deployerToolStack.canPerformAction(ToolActions.SWORD_SWEEP);
         }
         return value;
     }
